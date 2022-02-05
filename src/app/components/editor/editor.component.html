@@ -1,0 +1,40 @@
+<br><br><br><br><br>
+
+
+<div class="container">
+  <quill-editor [modules]="quillConfig" class="h400" (onSelectionChanged)="onSelectionHandler($event)">
+  </quill-editor>
+
+
+
+
+
+  <div *ngIf="response && response !== null && response !== undefined">
+    <p>
+      {{response.word}}
+    </p>
+    <ul>
+      <li *ngFor="let res of response.examples">
+        {{res}}
+      </li>
+    </ul>
+  </div>
+
+
+  <div *ngIf="error  !== '' && error !== null && error !== undefined">
+    <p>
+      {{error}}
+    </p>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>

@@ -1,0 +1,17 @@
+.example-tree-node {
+  display: flex;
+  align-items: center;
+}
+
+.mr-2 {
+  margin-right: 10px;
+}
+.ml-2 {
+  margin-left: 10px;
+  cursor: pointer;
+  color: green;
+}
+.container{
+  max-width: 1080px;
+  margin: 0px auto;
+}
